@@ -1,5 +1,5 @@
 ---
-layout: list
+layout: list-collection
 title: Novelettes
 description: >
   This is the `list` layout for showing novelettes, which shows just the title and groups them by year of publication.
