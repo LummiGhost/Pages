@@ -6,4 +6,5 @@ description: >
   Check out the `blog` layout for comparison.
 grouped: true
 hide_description: true
+collection: posts
 ---
