@@ -43,6 +43,15 @@ jobs:
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
+      # ---- 新增：安装 Java、Graphviz、PlantUML ----
+      - name: Install PlantUML & Graphviz
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y default-jre graphviz plantuml
+          java -version
+          dot -V
+          plantuml -version
+      # --------------------------------------------------
       - name: Build with Jekyll
         # Outputs to the './_site' directory by default
         run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
